@@ -12,7 +12,7 @@ body{
   font-family:Arial,sans-serif;
   background:#f4f8f5;
   color:#26352d;
-  text-align:center;
+  text-align:center; 
 }
 
 header{
