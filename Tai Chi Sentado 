@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tai Chi Sentado</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f4f8f5;
+  color:#26352d;
+  text-align:center;
+}
+
+header{
+  background:#2f7d4a;
+  color:white;
+  padding:25px 15px;
+}
+
+main{
+  max-width:600px;
+  margin:auto;
+  padding:20px;
+}
+
+.card{
+  background:white;
+  border-radius:16px;
+  padding:22px;
+  margin:18px 0;
+  box-shadow:0 3px 12px #0002;
+}
+
+button{
+  width:100%;
+  padding:16px;
+  margin:8px 0;
+  border:0;
+  border-radius:12px;
+  background:#2f7d4a;
+  color:white;
+  font-size:18px;
+  font-weight:bold;
+}
+
+button:active{
+  transform:scale(.98);
+}
+
+#status{
+  margin-top:18px;
+  font-size:18px;
+  min-height:25px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>☯ Tai Chi Sentado</h1>
+  <p>Movimento • Respiração • Bem-estar</p>
+</header>
+
+<main>
+
+<div class="card">
+  <h2>Bem-vindo</h2>
+  <p>
+    Uma prática suave de Tai Chi realizada sentado,
+    com movimentos lentos, respiração e relaxamento.
+  </p>
+</div>
+
+<div class="card">
+  <h2>Escolha sua prática</h2>
+
+  <button onclick="iniciar('Aquecimento')">
+    🌿 Aquecimento
+  </button>
+
+  <button onclick="iniciar('Tai Chi Guiado')">
+    ☯ Tai Chi Guiado
+  </button>
+
+  <button onclick="iniciar('Respiração')">
+    🌬️ Respiração
+  </button>
+
+  <button onclick="iniciar('Meditação')">
+    🧘 Meditação
+  </button>
+
+  <div id="status"></div>
+</div>
+
+</main>
+
+<script>
+function iniciar(nome){
+  document.getElementById("status").innerHTML =
+  "Selecionado: <strong>" + nome + "</strong>";
+}
+</script>
+
+</body>
+</html>
